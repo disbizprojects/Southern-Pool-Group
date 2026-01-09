@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Color Tokens - Masculine, Luxurious Palette */
+    --color-charcoal: #1a1a1a;
+    --color-dark-grey: #2a2a2a;
+    --color-medium-grey: #6b6b6b;
+    --color-light-grey: #e5e5e5;
+    --color-white: #ffffff;
+    --color-accent-blue: #3b9cd9;
+    --color-accent-dark-blue: #2a7ab5;
+    --color-gold: #c9a86a;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #1a1a1a;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  h5 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  h6 {
+    @apply text-lg md:text-xl font-semibold;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  button {
+    @apply transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .text-charcoal {
+    color: #1a1a1a;
+  }
+  
+  .bg-charcoal {
+    background-color: #1a1a1a;
+  }
+
+  .text-dark-grey {
+    color: #2a2a2a;
+  }
+
+  .bg-dark-grey {
+    background-color: #2a2a2a;
+  }
+
+  .text-medium-grey {
+    color: #6b6b6b;
+  }
+
+  .text-light-grey {
+    color: #e5e5e5;
+  }
+
+  .bg-light-grey {
+    background-color: #e5e5e5;
+  }
+
+  .text-accent-blue {
+    color: #3b9cd9;
+  }
+
+  .bg-accent-blue {
+    background-color: #3b9cd9;
+  }
+
+  .bg-accent-dark-blue {
+    background-color: #2a7ab5;
+  }
+
+  .text-gold {
+    color: #c9a86a;
+  }
+
+  .bg-gold {
+    background-color: #c9a86a;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
